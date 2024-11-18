@@ -1,0 +1,30 @@
+name: flutter_module
+description: A flutter module with a counter that can be manipulated from the host application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  web: ^1.0.0
+  # add some dependencies with native code
+  firebase_core: 3.5.0
+  firebase_analytics: 11.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  pigeon: ^10.1.4
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  module:
+    androidX: true
+    androidPackage: com.example.flutter_module
+    iosBundleIdentifier: com.example.flutterModule
